@@ -1,13 +1,14 @@
 def get_amount_chicken(w):
-    return int(w)*5
+    return int(w)*2
 
-def how_many_slaps(mass_chicken_g):
-    heat_capacity = 2.72
-    velocity = 4.0
-    mass_hand = 467.2
-    K = (1.0/2)*mass_hand*(velocity**2)
-    factor = 1.0/2
-    deltaT = (factor*K)/(mass_chicken_g*1000*heat_capacity)
-    #Assuming getting a chicken to 400 degrees cooks it
-    return 400.0/deltaT
-    #start = 23
+
+def how_many_slaps(mass_chicken_Kg, speed):
+    heat_capacity_Kg = 2720
+    velocity = speed
+    mass_hand = 0.467
+    K = (1.0/2.0)*mass_hand*(velocity**2)
+    factor = 1.0/2.0
+    deltaT = (K)/(mass_chicken_Kg*heat_capacity_Kg)
+    # Assuming getting a chicken to 400 degrees cooks it
+    return 210.0/deltaT
+    # start = 23

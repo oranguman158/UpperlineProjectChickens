@@ -29,11 +29,12 @@ def results():
 @app.route('/cooking', methods = ['GET', 'POST'])
 def cooking():
     c_weight = request.form['c_weight']
-    if c_weight == "Rhode Island Weight":
-        c_weight = 3400
+    speed = request.form['speed']
+    if c_weight == "Rhode Island Wright":
+        c_weight = 3.4
     elif c_weight == "Plymouth Rock chicken":
-        c_weight = 3200
+        c_weight = 3.2
     else:
         c_weight = c_weight
-    slaps = how_many_slaps(float(c_weight))
-    return render_template("cook_results.html", slaps=slaps, c_weight=c_weight, time=datetime.now())
+    slaps = how_many_slaps(float(c_weight), float(speed))
+    return render_template("cook_results.html", slaps=slaps, c_weight=c_weight, speed=speed, time=datetime.now())
