@@ -1,13 +1,20 @@
 <html>
     <head>
         <title>Chickens</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css?q={{time}}">
     </head>
     <body>
         <h1></h1>
-        <p>Enter the weight</p>
+        <p>Enter The Weight for the Chickens to pull(lbs)</p>
         <form method = "post" action = "/results">
             <input type="text" name="weight" placeholder="Enter a Weight"/>
             <input type="submit" value="Go!"/>
+        </form>
+        <p>Enter the Weight or Type of the Chicken you wish to cook</p>
+        <form method = "post" action = "/cooking">
+            <input type="text" name="c_weight" placeholder="Enter a Weight"/>
+            <input type="submit" value="Go!"/>
+            
         </form>
     </body>
 </html>
