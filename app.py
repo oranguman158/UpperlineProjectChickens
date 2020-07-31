@@ -9,15 +9,21 @@ from model import how_many_slaps
 # -- Initialization section --
 app = Flask(__name__)
 # -- Routes section --
+
+
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template("index.html", time=datetime.now())
+
+
 @app.route('/results', methods=['GET', 'POST'])
 def results():
     weight = request.form['weight']
     chickens = get_amount_chicken(weight)
     return render_template("results.html", chickens=chickens, weight=weight, time=datetime.now())
+
+
 @app.route('/cooking', methods=['GET', 'POST'])
 def cooking():
     c_weight = request.form['c_weight']
@@ -32,6 +38,8 @@ def cooking():
         c_weight = c_weight
     slaps = how_many_slaps(float(c_weight), float(speed))
     return render_template("cook_results.html", slaps=slaps, c_weight=c_weight, speed=speed, time=datetime.now())
+
+
 @app.route('/hof', methods=['GET', 'POST'])
 def hof():
     return render_template("chof.html", time=datetime.now())

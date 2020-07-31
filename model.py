@@ -11,5 +11,5 @@ def how_many_slaps(mass_chicken_Kg, speed):
     deltaT = (K)/(mass_chicken_Kg*heat_capacity_Kg)
     # Assuming getting a chicken to 400 degrees cooks it
     num=210.0/deltaT
-    return '%.8g'%(num)
+    return int(num)
     # start = 23
