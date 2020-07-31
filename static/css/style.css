@@ -1,3 +1,124 @@
-p {
-    background-color:coral
+#hoft {
+    position: absolute;
+    left: 475px;
+    top: 50px;
+    color: coral;
+    font-family: 'Anton', sans-serif;
+}
+#wp {
+    position: absolute;
+    left: 620px;
+    top: 200px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    border: 5px solid white;
+  border-radius: 20px;
+}
+#wp2 {
+    position: absolute;
+    left: 285px;
+    top: 300px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    border: 5px solid white;
+  border-radius: 20px;
+}
+#hpbg {
+ background-color:lightblue;
+}
+#bchof {
+ background-color:lightblue;
+}
+#br1 {
+ background-color:lightblue;
+}
+#br2 {
+ background-color:lightblue;
+}
+#s1 {
+ position: absolute;
+    left: 475px;
+    top: 100px;
+    color: coral;
+    font-family: 'Anton', sans-serif;
+}
+#s2 {
+ position: absolute;
+    left: 520px;
+    top: 60px;
+    color: coral;
+    font-family: 'Anton', sans-serif;
+}
+#s21 {
+ position: absolute;
+    left: 475px;
+    top: 100px;
+    color: coral;
+    font-family: 'Anton', sans-serif;
+}
+#s22 {
+ position: absolute;
+    left: 425px;
+    top: 140px;
+    color: coral;
+    font-family: 'Anton', sans-serif;
+}
+#i1 {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+#i2 {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+#i3 {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+#i4 {
+    position: absolute;
+    left: 850px;
+    top: 200px;
+}
+#rc {
+    position: absolute;
+    left: 500px;
+    top: 1200px;
+}
+#card1 {
+    position: absolute;
+    left: 25px;
+    top: 200px
+}
+#card2 {
+    position: absolute;
+    left: 475px;
+    top: 200px
+}
+#card3 {
+    position: absolute;
+    left: 925px;
+    top: 200px
+}
+#crown {
+position: absolute;
+    left: 600px;
+    top: 1100px
+}
+#hm {
+    color: coral;
+    font-family: 'Anton', sans-serif;
+  position: absolute;
+    left: 455px;
+    top: 1050px  
+}
+.hm2 {
+    color: coral;
+    font-family: 'Anton', sans-serif;
+  position: absolute;
+    left: 350px;
+    top: 1550px  
 }
