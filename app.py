@@ -43,3 +43,7 @@ def cooking():
 @app.route('/hof', methods=['GET', 'POST'])
 def hof():
     return render_template("chof.html", time=datetime.now())
+@app.route('/rc', methods=['GET', 'POST'])
+def rc():
+    return render_template("rc.html", time=datetime.now())
+    
